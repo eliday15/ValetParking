@@ -15,25 +15,20 @@ int main(int argc, char const *argv[])
     scanf("%i",&opcion);
     switch (opcion) {
       case 1:
-      {
         administrarChoferes(choferes, &contadorC);
+        printf("%d\n",contadorC);
         break;
-      }
       case 2:
-      {
         administrarVehiculos(autos, &contadorA);
         break;
-      }
       case 3:
-      {
         administrarEstacionamiento(choferes, autos, pisos);
         break;
-      }
+      case 4:
+      return 0;
+      default:
+         printf("Escoge una opcion valida\n");
     }
 
   } while(opcion != 4);
-
-
-
-  return 0;
 }

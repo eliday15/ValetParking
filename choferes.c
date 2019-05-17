@@ -1,16 +1,17 @@
-#include "prototipos.h"
+#include "vehiculos.c"
 
-void reporteVehiculos(Chofer choferes[3], int contadorC) {
+void reporteChoferes(Chofer choferes[3], int contadorC) {
   printf("H\n");
+  contadorC = 10;
   return;
 }
 
-void agregarVehiculos(Chofer choferes[3], int *contadorC)
+void agregarChoferes(Chofer choferes[3], int *contadorC)
 {
   *contadorC = 10;
   return;
 }
-void modificarVehiculos(Chofer choferes[3], int *contadorC)
+void modificarChoferes(Chofer choferes[3], int contadorC)
 {
   printf("Hola\n");
   return;
