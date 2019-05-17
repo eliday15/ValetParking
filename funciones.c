@@ -11,15 +11,15 @@ void administrarChoferes(Chofer choferes[3], int *contadorC)
     switch (opcionChoferes) {
       case 1:
         reporteChoferes(choferes, *contadorC);
-        printf("%d\n", *contadorC);
         break;
       case 2:
         agregarChoferes(choferes, contadorC);
-        printf("%d\n", *contadorC);
         break;
       case 3:
         modificarChoferes(choferes, *contadorC);
         break;
+      case 4:
+        return;
       default:
          printf("Escoge una opcion valida\n");
     }
@@ -52,6 +52,7 @@ void administrarVehiculos(Auto autos[10], int *contadorA)
        printf("Escoge una opcion valida\n");
     }
   } while(opcionVehiculos != 4);
+  return;
 
 }
 void administrarEstacionamiento(Chofer choferes[3], Auto autos[10], int pisos[3][3])

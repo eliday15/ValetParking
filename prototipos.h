@@ -6,9 +6,9 @@
 
 typedef  struct Chofer {
   int numeroId;
-  char Nombre[20];
-  char ApellidoP[20];
-  char ApellidoM[20];
+  char nombre[20];
+  char apellidoP[20];
+  char apellidoM[20];
   int estatus;
 }Chofer;
 
