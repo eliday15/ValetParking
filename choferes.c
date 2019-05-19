@@ -1,5 +1,6 @@
 #include "vehiculos.c"
 
+
 void reporteChoferes(Chofer choferes[3], int contadorC) {
 
   int i;
@@ -92,6 +93,7 @@ void modificarChoferes(Chofer choferes[3], int contadorC)
       fprintf(archivo, "Apellido Paterno: %s\n", choferes[i].apellidoP);
       fprintf(archivo, "Apellido Materno: %s\n", choferes[i].apellidoM);
       fprintf(archivo, "Estatus: %d\n", choferes[i].estatus);
+      fprintf(archivo, "%d\n\n", contadorC);
     }
     fclose(archivo);
 

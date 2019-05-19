@@ -9,6 +9,9 @@ int main(int argc, char const *argv[])
   int contadorA = 0;
   int opcion;
 
+  contadorC = leerChoferes(&contadorC);
+  printf("%d \n", contadorC);
+
   do {
     printf("Porfavor selecciona la opcion deseada\n");
     printf("1. Administrar choferes\n2. Administrar vehiculos\n3. Administar estacionamiento\n4. Salir\n");
