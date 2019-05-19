@@ -1,4 +1,16 @@
 #include "choferes.c"
+
+void mostrarInstrucciones (char autor[], char instrucciones[])
+{
+printf("Aplicación desarrollada por:\n");
+printf("\t%s\n\n", autor);
+printf("Descripción del programa:\n");
+printf("\t%s\n\n", instrucciones);
+printf("Presione ENTER para continuar...");
+getchar();
+system("clear");
+}
+
 void administrarChoferes(Chofer choferes[3], int *contadorC)
 {
   int opcionChoferes;

@@ -1,4 +1,21 @@
-  #include "funciones.c"
+#include "funciones.c"
+
+/*
+*@brief Simulador de valet parking
+*@details Programa que administra un valet parking
+*@file main.c
+*
+*@author Programador(es):
+*   Elias Dayan
+*@date Fecha de creación:
+*   16 de mayo del 2019
+*
+*@author Último en modificar:
+*   Elias Dayan
+*@date Última modificación
+*   19 de mayo del 2019
+*
+*/ 
 
 int main(int argc, char const *argv[])
 {
@@ -8,6 +25,8 @@ int main(int argc, char const *argv[])
   int contadorC = 0;
   int contadorA = 0;
   int opcion;
+
+  mostrarInstrucciones("Elias Dayan", "Programa que simula el control de un valet parking");
 
   printf("%d \n", contadorC);
 
