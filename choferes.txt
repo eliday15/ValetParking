@@ -1,0 +1,15 @@
+Numero de identificacion: 1
+Nombre: Salo
+Apellido Paterno: Haber
+Apellido Materno: Dayan
+Estatus: 3
+Numero de identificacion: 2
+Nombre: David
+Apellido Paterno: Halabe
+Apellido Materno: Husni
+Estatus: 1
+Numero de identificacion: 3
+Nombre: Isaac
+Apellido Paterno: Haber
+Apellido Materno: Micha
+Estatus: 3
