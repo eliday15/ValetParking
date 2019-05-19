@@ -9,7 +9,6 @@ int main(int argc, char const *argv[])
   int contadorA = 0;
   int opcion;
 
-  contadorC = leerChoferes(&contadorC);
   printf("%d \n", contadorC);
 
   do {
