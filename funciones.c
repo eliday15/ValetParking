@@ -14,12 +14,11 @@ printf("Presione ENTER para continuar...");
 getchar();
 system("clear");
 }
-
 /*
 *@fn Menu de choferes
 *@param arreglo de choferes y contador
 *@var variable para elegir opcion
-*/  
+*/
 void administrarChoferes(Chofer choferes[3], int *contadorC)
 {
   int opcionChoferes;

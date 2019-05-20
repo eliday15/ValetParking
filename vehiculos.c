@@ -24,7 +24,7 @@ void reporteVehiculos(Auto autos[10], int contadorA)
 /*
 *@fn Función para agregar vehiculos al sistema
 *@param arreglo de autos y contador
-*/ 
+*/
 void agregarVehiculos(Auto autos[10], int *contadorA)
 {
   printf("Porfavor llena los datos para agregar el vehiculo\n");
@@ -43,6 +43,17 @@ void agregarVehiculos(Auto autos[10], int *contadorA)
   printf("Modelo: %s\n", autos[*contadorA].modelo);
   printf("Color: %s\n", autos[*contadorA].color);
 
+  FILE *archivoV;
+  archivoV = fopen ("vehiculos.txt","at");
+  if (archivoV!=NULL)
+  {
+    fprintf(archivoV,"Numero de placa: %s\n",autos[*contadorA].numeroPlaca);
+    fprintf(archivoV, "Marca: %s\n", autos[*contadorA].marca);
+    fprintf(archivoV, "Modelo: %s\n", autos[*contadorA].modelo);
+    fprintf(archivoV, "Color: %s\n", autos[*contadorA].color);
+    fclose (archivoV);
+  }
+
   (*contadorA)++;
 
   return;
@@ -60,8 +71,11 @@ void modificarVehiculos(Auto autos[10], int contadorA)
     printf("Porfavor introduce el numero de placa para modificar los datos del vehiculos\n");
     scanf("%s", placa);
 
-    for (i = 0; i < contadorA + 1; i++) {
-      if (strcmp(placa, autos[i].numeroPlaca) == 0) {
+    for (i = 0; i < contadorA; i++)
+    {
+    printf("%i\n",i);
+      if (strcmp(placa, autos[i].numeroPlaca) == 0)
+      {
         printf("Numero de placa:\n");
         scanf(" %[^\n]", autos[i].numeroPlaca);
         printf("Marca:\n");
@@ -75,6 +89,18 @@ void modificarVehiculos(Auto autos[10], int contadorA)
         printf("Marca: %s\n", autos[i].marca);
         printf("Modelo: %s\n", autos[i].modelo);
         printf("Color: %s\n", autos[i].color);
+
+        FILE *archivoV;
+        archivoV = fopen ("vehiculos.txt","wt");
+
+        for (i = 0; i < contadorA; i++) {
+            printf("%d\n",i);
+            fprintf(archivoV,"Numero de placa: %s\n",autos[i].numeroPlaca);
+            fprintf(archivoV, "Marca: %s\n", autos[i].marca);
+            fprintf(archivoV, "Modelo: %s\n", autos[i].modelo);
+            fprintf(archivoV, "Color: %s\n", autos[i].color);
+        }
+        fclose (archivoV);
       }
     }
     return;

@@ -15,7 +15,7 @@
 *@date Última modificación
 *   19 de mayo del 2019
 *
-*/ 
+*/
 
 /*
 *@fn funcion principal de main
@@ -29,8 +29,6 @@ int main(int argc, char const *argv[])
   int contadorA = 0;
   int opcion;
   mostrarInstrucciones("Elias Dayan", "Programa que simula el control de un valet parking");
-
-  printf("%d \n", contadorC);
 
   do {
     printf("Porfavor selecciona la opcion deseada\n");
