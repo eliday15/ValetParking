@@ -44,4 +44,8 @@ void reporteEspacios(Auto autos[10], int pisos[3][3], int i, int j);
 void reporteFinanciero(int pisos[3][3]);
 void reporteProductividad(int pisos[3][3]);
 
-int leerChoferes(int *contadorC);
+void escribirChoferes(Chofer choferes[3], int contadorC);
+void escribirVehiculos(Auto autos[10], int contadorA);
+
+void leerChoferes(Chofer choferes[3], int *contadorC);
+void leerVehiculos(Auto autos[10], int *contadorA);

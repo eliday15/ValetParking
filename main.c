@@ -1,5 +1,3 @@
-#include "funciones.c"
-
 /*
 *@brief Simulador de valet parking
 *@details Programa que administra un valet parking
@@ -17,6 +15,8 @@
 *
 */
 
+#include "funciones.c"
+
 /*
 *@fn funcion principal de main
 */
@@ -28,6 +28,9 @@ int main(int argc, char const *argv[])
   int contadorC = 0;
   int contadorA = 0;
   int opcion;
+
+  leerChoferes(choferes, &contadorC);
+  leerVehiculos(autos, &contadorA);
   mostrarInstrucciones("Elias Dayan", "Programa que simula el control de un valet parking");
 
   do {
@@ -37,7 +40,6 @@ int main(int argc, char const *argv[])
     switch (opcion) {
       case 1:
         administrarChoferes(choferes, &contadorC);
-        printf("%d\n",contadorC);
         break;
       case 2:
         administrarVehiculos(autos, &contadorA);
@@ -46,6 +48,8 @@ int main(int argc, char const *argv[])
         administrarEstacionamiento(choferes, autos, pisos);
         break;
       case 4:
+      escribirChoferes(choferes, contadorC);
+      escribirVehiculos(autos, contadorC);
       return 0;
       default:
          printf("Escoge una opcion valida\n");

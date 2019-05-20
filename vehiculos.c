@@ -43,17 +43,6 @@ void agregarVehiculos(Auto autos[10], int *contadorA)
   printf("Modelo: %s\n", autos[*contadorA].modelo);
   printf("Color: %s\n", autos[*contadorA].color);
 
-  FILE *archivoV;
-  archivoV = fopen ("vehiculos.txt","at");
-  if (archivoV!=NULL)
-  {
-    fprintf(archivoV,"Numero de placa: %s\n",autos[*contadorA].numeroPlaca);
-    fprintf(archivoV, "Marca: %s\n", autos[*contadorA].marca);
-    fprintf(archivoV, "Modelo: %s\n", autos[*contadorA].modelo);
-    fprintf(archivoV, "Color: %s\n", autos[*contadorA].color);
-    fclose (archivoV);
-  }
-
   (*contadorA)++;
 
   return;
@@ -89,18 +78,6 @@ void modificarVehiculos(Auto autos[10], int contadorA)
         printf("Marca: %s\n", autos[i].marca);
         printf("Modelo: %s\n", autos[i].modelo);
         printf("Color: %s\n", autos[i].color);
-
-        FILE *archivoV;
-        archivoV = fopen ("vehiculos.txt","wt");
-
-        for (i = 0; i < contadorA; i++) {
-            printf("%d\n",i);
-            fprintf(archivoV,"Numero de placa: %s\n",autos[i].numeroPlaca);
-            fprintf(archivoV, "Marca: %s\n", autos[i].marca);
-            fprintf(archivoV, "Modelo: %s\n", autos[i].modelo);
-            fprintf(archivoV, "Color: %s\n", autos[i].color);
-        }
-        fclose (archivoV);
       }
     }
     return;
