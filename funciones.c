@@ -1,5 +1,9 @@
 #include "choferes.c"
 
+/*
+*@fn Función que muestra las instrucciones del programa
+*@param 2 variables de tipo char
+*/
 void mostrarInstrucciones (char autor[], char instrucciones[])
 {
 printf("Aplicación desarrollada por:\n");
@@ -11,6 +15,11 @@ getchar();
 system("clear");
 }
 
+/*
+*@fn Menu de choferes
+*@param arreglo de choferes y contador
+*@var variable para elegir opcion
+*/  
 void administrarChoferes(Chofer choferes[3], int *contadorC)
 {
   int opcionChoferes;
@@ -38,7 +47,11 @@ void administrarChoferes(Chofer choferes[3], int *contadorC)
   } while(opcionChoferes != 4);
   return;
 }
-
+/*
+*@fn Menu de vehiculos
+*@param arreglo de autos y contador
+*@var vaiable para elegir opcion
+*/
 void administrarVehiculos(Auto autos[10], int *contadorA)
 {
   int opcionVehiculos;
@@ -67,6 +80,12 @@ void administrarVehiculos(Auto autos[10], int *contadorA)
   return;
 
 }
+
+/*
+*@fn Menu del estacionamiento
+*@param arreglo de choferes, autos y pisos
+*@var variable para elegir opcion y 2 variables contadores
+*/
 void administrarEstacionamiento(Chofer choferes[3], Auto autos[10], int pisos[3][3])
 {
   int opcionEstacionamiento;
@@ -96,7 +115,11 @@ void administrarEstacionamiento(Chofer choferes[3], Auto autos[10], int pisos[3]
   } while(opcionEstacionamiento != 4);
   return;
 }
-
+/*
+*@fn Menu para el control del estacionamiento
+*@param arreglo de choferes, autos, pisos y 2 contadores
+*@var variable para elegir opcion
+*/
 void controlEstacionamiento(Chofer choferes[3], Auto autos[10], int pisos[3][3], int *i, int *j)
 {
   int opcionControl;

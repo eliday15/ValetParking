@@ -17,6 +17,9 @@
 *
 */ 
 
+/*
+*@fn funcion principal de main
+*/
 int main(int argc, char const *argv[])
 {
   Chofer choferes[3];
@@ -25,7 +28,6 @@ int main(int argc, char const *argv[])
   int contadorC = 0;
   int contadorA = 0;
   int opcion;
-
   mostrarInstrucciones("Elias Dayan", "Programa que simula el control de un valet parking");
 
   printf("%d \n", contadorC);

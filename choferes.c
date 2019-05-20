@@ -1,6 +1,10 @@
 #include "vehiculos.c"
 
-
+/*
+*@fn Función que se encarga de decirte los choferes registrados
+*@param arreglo de choferes y el contador
+*@var variable contador i
+*/
 void reporteChoferes(Chofer choferes[3], int contadorC) {
 
   int i;
@@ -16,7 +20,11 @@ void reporteChoferes(Chofer choferes[3], int contadorC) {
   }
   return;
 }
-
+/*
+*@fn Función para agregar nuevos choferes
+*@param arreglo de choferes y contador
+*@var archivo
+*/
 void agregarChoferes(Chofer choferes[3], int *contadorC)
 {
   printf("Para añadir los datos del chofer %d porfavor ingresa los siguientes datos.\n", *contadorC + 1);
@@ -56,6 +64,12 @@ void agregarChoferes(Chofer choferes[3], int *contadorC)
 
   return;
 }
+
+/*
+*@fn Función para modificar datos del chofer
+*@param arreglo de choferes y el contador
+*@var variable para elegir opción y un contador
+*/
 void modificarChoferes(Chofer choferes[3], int contadorC)
 {
   int opcion;

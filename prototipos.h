@@ -20,6 +20,9 @@ typedef struct Auto {
 
 }Auto;
 
+/*
+*@brief Prototipo de funciones
+*/
 void AdministrarChoferes(Chofer choferes[3], int *contadorC);
 void administrarVehiculos(Auto autos[10], int *contadorA);
 void administrarEstacionamiento(Chofer choferes[3], Auto autos[10], int pisos[3][3]);

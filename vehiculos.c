@@ -1,5 +1,10 @@
 #include "aEstacionamiento.c"
 
+/*
+*@fn Función para reportar los vehiculos ingresados en el sistema
+*@param arreglo de autos y contador
+*@var variable contador
+*/
 void reporteVehiculos(Auto autos[10], int contadorA)
 {
     int i;
@@ -16,6 +21,10 @@ void reporteVehiculos(Auto autos[10], int contadorA)
     return;
 }
 
+/*
+*@fn Función para agregar vehiculos al sistema
+*@param arreglo de autos y contador
+*/ 
 void agregarVehiculos(Auto autos[10], int *contadorA)
 {
   printf("Porfavor llena los datos para agregar el vehiculo\n");
@@ -39,6 +48,11 @@ void agregarVehiculos(Auto autos[10], int *contadorA)
   return;
 }
 
+/*
+*@fn Función para modificar datos de los vehiculos
+*@param arreglo de autos y variable contador
+*@var variable contador y variable tipo char para recibir los datos de la placa
+*/
 void modificarVehiculos(Auto autos[10], int contadorA)
 {
     int i;
